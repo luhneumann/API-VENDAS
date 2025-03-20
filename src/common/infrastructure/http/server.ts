@@ -1,7 +1,8 @@
+import { env } from "../env";
 import { app } from "./app";
 
-const port = 3333
 
-app.listen(port, () => {
-  console.log('Server is running on port 3333')
+
+app.listen(env.PORT, () => {
+  console.log(`Server is running on port ${env.PORT}`)
 })
